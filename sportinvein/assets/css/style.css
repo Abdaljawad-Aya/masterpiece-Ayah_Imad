@@ -1,0 +1,122 @@
+.containerOne {
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px;
+    font-family: 'Trocchi', serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.containerTwo {
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px;
+    font-family: 'Trocchi', serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.containerThree {
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px;
+    font-family: 'Trocchi', serif;
+    font-size: 30px;
+    font-weight: normal;
+    /* line-height: 48px; */
+    /* margin: 0; */
+}
+
+.href {
+    border-style: solid;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+.href:hover {
+    background-color: #f46101;
+    border: #f46101;
+}
+
+.style1 {
+    border-width: 0;
+    width: 73%;
+    margin: 5px auto;
+    background: #f46101;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 50px;
+}
+
+.style2 {
+    border-width: 0;
+    border: solid white 1px;
+    width: 73%;
+    margin: 5px auto;
+    background: white;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    /*padding: 15px 55px;   */
+}
+
+.btnS {
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-color: #f46101;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+}
+
+.btnS1 {
+    background-color: white;
+    color: black;
+}
+
+.btnS1:hover {
+    background-color: #f46101;
+    color: white;
+}
+
+
+/* Contact Validation */
+
+.form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+.error {
+    color: red;
+    font-weight: 400;
+    display: block;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.form-control.error {
+    border-color: red;
+    padding: .375rem .75rem;
+}

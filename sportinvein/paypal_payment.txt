@@ -1,0 +1,30 @@
+sandbox business Account 
+email: sb-enagv5256909@business.example.com
+
+password: 4fr^+0Ve
+
+
+sandbox personal account 
+email:  sb-h447mi5270759@personal.example.com
+password: 0>V&fO[3
+
+
+Client ID: AffpkFem-SNIqz70nreqfcIBhe7ksAzIF4x5fVGijliEkfrab-TczDaNMKCPDLlWlOsMlmafY5sj90bp
+CLIENT_SECRET: EIWyMeeS2y9PxBacxpNeYvt3WnF1VYE054G5bdcLv432a6JpHVwQvJnWsL7scC2Eos321WStadKs_8BV
+
+
+TEST CARD DETAILS 
+
+
+Asia
+
+card Type: Visa 
+Card Number : 4032035334290186
+Experation Date: 03/2025
+CVV: 259
+
+Number: +962 7 7640 2348
+Town:  Jordan
+Postal Code: 	11194
+Address: odeh al tayeh
+Email: abdaljawad.ayah94@gmail.com

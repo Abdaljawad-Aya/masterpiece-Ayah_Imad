@@ -1,0 +1,9 @@
+How Much Should I Weigh?
+
+There are several factors that influence our weight, for example age, sex, muscle mass, genetics, ethnicity and physical activity levels - just to name a few. Whilst many of us are looking for that magic number on the scale, the truth is that there's no one “ideal” weight that we should be aiming for.
+
+there where BMR comes, the idea of just to let the users calculate their BMR a BMR is You use energy no matter what you're doing, even when sleeping. Thus your Basal Metabolic Rate (BMR) is the number of calories you'd burn if you stayed in bed all day.
+
+Also BMR decreases as you age. Likewise, depriving yourself of food in hopes of losing weight also decreases your BMR
+
+So Men usually have greater percentage of lean body weight than women so we need to calculate BMR with different formulas
