@@ -156,6 +156,42 @@
             border: 1px solid gray;
         }
 
+        /* Search Style */
+          .article-container {
+              width: 450px;
+              color: white;
+              margin-top: 20px;
+              font-weight: bold;
+              
+              
+            }
+            
+            .article-box{
+                padding-bottom: 30px;
+                width: 100%;
+            }
+            .input{
+                padding: 0px 20px;
+                width: 300px;
+                height: 40px;
+                font-size: 22px;
+            }
+            
+            .searchButton{
+              background-color: white;
+              padding: 0px 20px;
+              width: 300px;
+              height: 40px;
+              font-size: 22px;
+              border: none;
+            }
+            .searchButton:hover{
+              background-color: #f46101;
+              color: white;
+
+          }
+
+
 
         </style>
     </head>
@@ -187,18 +223,10 @@
                 <ul>
                     <li><a href="./index.php">Home</a></li>
                     <li><a href="./about-us.php">About Us</a></li>
-                    <!-- <li><a href="./classes.html">Classes</a></li> -->
                     <li><a href="./services.php">Services</a></li>
-                    <!-- <li><a href="./team.html">Our Team</a></li> -->
                     <li><a href="#">Pages</a>
                         <ul class="dropdown">
-                            <!-- <li><a href="./about-us.php">About us</a></li> -->
-                            <!-- <li><a href="./class-timetable.html">Classes timetable</a></li> -->
                             <li><a href="./bmi-calculator.php">BMR calculate</a></li>
-                            <!-- <li><a href="./team.php">Our team</a></li> -->
-                            <!-- <li><a href="./gallery.html">Gallery</a></li> -->
-                            <!-- <li><a href="./blog.html">Our blog</a></li> -->
-                            <!-- <li><a href="./404.html">404</a></li> -->
                         </ul>
                     </li>
                     <li><a href="./contact.php">Contact</a></li>
@@ -232,18 +260,11 @@
                                 <li class="active"><a href="./index.php">Home</a></li>
                                 <li><a href="./about-us.php">About Us</a></li>
                                 <li><a href="./services.php">Services</a></li>
-                                <!-- <li><a href="./team.html">Our Team</a></li> -->
+                                
                                 <li><a href="#">Pages</a>
                                     <ul class="dropdown">
-                                        <!-- <li><a href="./about-us.php">About us</a></li> -->
-                                        <!-- <li><a href="./class-timetable.html">Classes timetable</a></li> -->
                                         <li><a href="./bmr-calculator.php">BMR calculate</a></li>
                                         <li><a href="./appointment.php">Appointment</a></li>
-
-                                        <!-- <li><a href="./team.html">Our team</a></li> -->
-                                        <!-- <li><a href="./gallery.html">Gallery</a></li> -->
-                                        <!-- <li><a href="./blog.html">Our blog</a></li> -->
-                                        <!-- <li><a href="./404.html">404</a></li> -->
                                     </ul>
                                 </li>
                                 <li><a href="./contact.php">Contact</a></li>
@@ -252,8 +273,10 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="top-option">
-                            <div class="to-search search-switch">
-                                <i class="fa fa-search"></i>
+                            <div class="to-search search-switch"> 
+                                <i class="fa fa-search">
+
+                                </i>
                             </div>
                             <div class="to-social">
                                 <a href="https://www.facebook.com/ayah.imad.fb/"><i class="fa fa-facebook"></i></a>
@@ -267,7 +290,9 @@
                     </div>
                 </div>
                 <div class="canvas-open">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars">
+
+                    </i>
                 </div>
             </div>
         </header>

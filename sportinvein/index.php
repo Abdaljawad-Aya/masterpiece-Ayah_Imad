@@ -208,6 +208,8 @@
                    
                 </div>
           <?php } ?>
+
+
           <h3><?php echo strtoupper($price['product']);?></h3>
           <div class="pi-price">
             <h2><?php echo $price['price'];?></h2>
@@ -235,47 +237,14 @@
           <!-- ENROLL NOW -->
            </a></div>
       </div>
-      <div class="paypal">
-  
-</div>
+
       <?php }?>
      
      
 </section>
 <!-- Pricing Section End -->
 
-<div id="pop-up">
-  <div id="small-dialog" class="mfp-hide">
-    <div class="pop_up">
-      <div class="payment-online-form-left">
-        <form id="signUpForm" class="paypal" action="#" method="post">
-          <input type="hidden" name="Subscribe" value="1">
-          <input type="hidden" name="Plan" value="">
-          <input type="hidden" name="Price" value="">
-          <h4>Sign Up</h4>
-          <ul>
-            <li> <input class="text-box-dark" type="text" placeholder="Name" name="Name" required> </li>
 
-            <li> <input class="text-box-dark email" type="text" placeholder="Email" name="Email" required> </li>
-
-            <li> <input class="text-box-dark" type="password" placeholder="Password" name="Paswword" required>
-            </li>
-
-            <li> <input class="text-box-dark" type="text" placeholder="Phone" name="Phone" required> </li>
-          </ul>
-          <span class="checkbox1">
-            <label class="checkbox"><input type="checkbox" name="Terms" checked="" required>
-              <li> </li> I Accept Terms.
-            </label>
-          </span>
-          <ul class="payment-sendbtns">
-            <li><input type="submit" value="Submit"></li>
-          </ul>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- start pop-up-grid -->
 
 
@@ -293,52 +262,44 @@
       <div class="col-lg-12">
         <div class="team-title">
           <div class="section-title">
+
+            
             <span>Our Team</span>
             <h2>TRAIN WITH EXPERTS</h2>
           </div>
+          
           <a href="appointment.php" class="primary-btn btn-normal appoinment-btn">appointment</a>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="ts-slider owl-carousel">
+    
+      
+    <?php 
+          include './includes/db.php';
 
-        <div class="col-lg-4">
-          <div class="ts-item set-bg" data-setbg="img/team/team-2.jpg">
+          
+         $query = "SELECT id, trainerName, trainerTitle , trainerImage  FROM trainers ORDER BY id ASC";
+         $results = mysqli_query($con, $query) or die ("database error:". mysqli_error($con));
+         while($trainer = mysqli_fetch_assoc($results)){
+       ?>
+
+        <div class="col-lg-4 ">
+        
+          <div class="ts-item set-bg" data-setbg="<?php echo $trainer['trainerImage'];?>">
             <div class="ts_text">
-              <h4>Jamie Turner</h4>
-              <span>Gym Trainer</span>
+              <h4><?php echo $trainer['trainerName'];?></h4>
+              <span><?php echo $trainer['trainerTitle'];?></span>
             </div>
           </div>
+     
+
         </div>
-        <div class="col-lg-4">
-          <div class="ts-item set-bg" data-setbg="img/team/team-3.jpg">
-            <div class="ts_text">
-              <h4>John Myer</h4>
-              <span>Gym Trainer</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="ts-item set-bg" data-setbg="img/team/team-8.jpg">
-            <div class="ts_text">
-              <h4>Jillian Michaels</h4>
-              <span>Gym Trainer</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="ts-item set-bg" data-setbg="img/team/team-7.jpg">
-            <div class="ts_text">
-              <h4>Oscar Fox</h4>
-              <span>Gym Trainer</span>
-            </div>
-          </div>
-        </div>
+<?php }?>
       </div>
     </div>
   </div>
-
 
 
 

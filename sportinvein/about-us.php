@@ -34,32 +34,31 @@
         <div class="cs-item">
           <span class="flaticon-034-stationary-bike"></span>
           <h4>Modern equipment</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            dolore facilisis.</p>
+          <p>The equipment ranges from balls, nets, and protective gear like helmets.protective gear or a tool used to
+            help the athletes play the sport</p>
         </div>
       </div>
       <div class="col-lg-3 col-sm-6">
         <div class="cs-item">
           <span class="flaticon-033-juice"></span>
           <h4>Healthy nutrition plan</h4>
-          <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-            facilisis.</p>
+          <p>A healthy eating plan gives your body the nutrients it needs every day while staying within your daily
+            calorie goal for weight loss. </p>
         </div>
       </div>
       <div class="col-lg-3 col-sm-6">
         <div class="cs-item">
           <span class="flaticon-002-dumbell"></span>
           <h4>Proffesponal training plan</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            dolore facilisis.</p>
+          <p>The training plan will include all topics, knowledge and skills that you need to be able to do
+          </p>
         </div>
       </div>
       <div class="col-lg-3 col-sm-6">
         <div class="cs-item">
           <span class="flaticon-014-heart-beat"></span>
           <h4>Unique to your needs</h4>
-          <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-            facilisis.</p>
+          <p>Our goal</p>
         </div>
       </div>
     </div>
@@ -121,8 +120,6 @@
                 </div>
               </div>
             </div>
-            
-
           </div>
         </div>
       </div>
@@ -138,52 +135,40 @@
       <div class="col-lg-12">
         <div class="team-title">
           <div class="section-title">
+
+            
             <span>Our Team</span>
             <h2>TRAIN WITH EXPERTS</h2>
           </div>
+          
           <a href="appointment.php" class="primary-btn btn-normal appoinment-btn">appointment</a>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="ts-slider owl-carousel">
+    <?php 
+          include './includes/db.php';
+         $query = "SELECT id, trainerName, trainerTitle , trainerImage  FROM trainers ORDER BY id ASC";
+         $results = mysqli_query($con, $query) or die ("database error:". mysqli_error($con));
+         while($trainer = mysqli_fetch_assoc($results)){
+       ?>
 
-        <div class="col-lg-4">
-          <div class="ts-item set-bg" data-setbg="img/team/team-2.jpg">
+        <div class="col-lg-4 ">
+        
+          <div class="ts-item set-bg" data-setbg="<?php echo $trainer['trainerImage'];?>">
             <div class="ts_text">
-              <h4>Jamie Turner</h4>
-              <span>Gym Trainer</span>
+              <h4><?php echo $trainer['trainerName'];?></h4>
+              <span><?php echo $trainer['trainerTitle'];?></span>
             </div>
           </div>
+     
+
         </div>
-        <div class="col-lg-4">
-          <div class="ts-item set-bg" data-setbg="img/team/team-3.jpg">
-            <div class="ts_text">
-              <h4>John Myer</h4>
-              <span>Gym Trainer</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="ts-item set-bg" data-setbg="img/team/team-8.jpg">
-            <div class="ts_text">
-              <h4>Jillian Michaels</h4>
-              <span>Gym Trainer</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="ts-item set-bg" data-setbg="img/team/team-7.jpg">
-            <div class="ts_text">
-              <h4>Oscar Fox</h4>
-              <span>Gym Trainer</span>
-            </div>
-          </div>
-        </div>
+<?php }?>
       </div>
     </div>
   </div>
-
 
 
 

@@ -222,16 +222,18 @@ if (isset($_POST["bmrsubmit"]) ) {
 
                 <div class="row">
                     <div class="col-sm-6">
-                        <input type="date" name="dob" value="<?php echo $date;?> " placeholder="Date Of Birth" id="dob" />
+                        <input type="date" name="dob" value="<?php echo $date;?> " placeholder="Date Of Birth" id="dob" style="background-color: white;" />
                     </div>
                     <div class="col-sm-6">
-                         <input type="number" name="weight" value="<?php echo $weight;?>" step="1" placeholder="Weight" required id="weight"/>
+                         <input type="number" name="weight" value="<?php echo $weight;?>" step="1" placeholder="Weight" required id="weight" 
+                         style="background-color: white;"
+                         />
                      </div>
                     <div class="col-sm-6">
-                        <input type="number" name="feet" value="<?php echo $feet;?>" step="1" min="1" max="10" required placeholder="Feet" id="feet"/>
+                        <input type="number" name="feet" value="<?php echo $feet;?>" step="1" min="1" max="10" required placeholder="Feet" id="feet" style="background-color: white;"/>
                     </div>
                     <div class="col-sm-6">
-                      <input type="number" value="<?php echo $inch;?>" min="0" max="11" maxlength="2" name="inch" step="1"placeholder="Inch" required id="inch" />
+                      <input type="number" value="<?php echo $inch;?>" min="0" max="11" maxlength="2" name="inch" step="1"placeholder="Inch" required id="inch"  style="background-color: white;"/>
                     </div>
                     
                   <div class="col-sm-1">

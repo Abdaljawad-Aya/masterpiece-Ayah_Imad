@@ -71,8 +71,8 @@
         </td>
         <td>Do you declare a disability?</td>
         <td>
-          <input type="checkbox" name="yes" value="yes" required>Yes
-          <input type="checkbox" name="no" value="no" required>No
+          <input type="radio" name="yes" value="yes" required>Yes
+          <input type="radio" name="no" value="no" required>No
         </td>
 
       </tr>
