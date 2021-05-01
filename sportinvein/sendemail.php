@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 // use PHPMailer\PHPMailer\PHPMailer;
 // use PHPMailer\PHPMailer\SMTP;
 // use PHPMailer\PHPMailer\Exception;
@@ -26,12 +26,12 @@
 
 //   $mail->From = 'fighterforlifeever@gmail.com';
 //   $mail->FromName = 'fighterforlifeever@gmail.com';
-  // $mail->setFrom('fighterforlifeever@gmail.com');
-  // $mail->addAddress('fighterforlifeever@gmail.com');
+//   $mail->setFrom('fighterforlifeever@gmail.com');
+//   $mail->addAddress('fighterforlifeever@gmail.com');
 
-  // $mail->isHTML(true);
-  // $mail->Subject = 'Message Received (Contact Page)';
-  // $mail->Body   = '<h3>Name : $name  <br />Email: $email <br>Message : $visitor_message </h3>';
+//   $mail->isHTML(true);
+//   $mail->Subject = 'Message Received (Contact Page)';
+//   $mail->Body   = '<h3>Name : $name  <br />Email: $email <br>Message : $visitor_message </h3>';
 //   $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 
@@ -60,4 +60,4 @@
 // echo "Message has been sent successfully"; 
 // }
 
-?> -->
+?>

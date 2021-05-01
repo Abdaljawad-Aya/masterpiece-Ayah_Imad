@@ -181,6 +181,11 @@
 <!-- Testimonial Section Begin -->
 <section class="testimonial-section spad">
   <div class="container">
+  <?php 
+     include './includes/db.php';
+ 
+  
+  ?>
     <div class="row">
       <div class="col-lg-12">
         <div class="section-title">
@@ -190,21 +195,29 @@
       </div>
     </div>
     <div class="ts_slider owl-carousel">
+   
       <div class="ts_item">
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="ti_pic">
               <img src="img/testimonial/one.jpg" alt="">
             </div>
+    
+
             <div class="ti_text">
               <p>It was a great experience with the most successful Trainers in Jordan<br />I was able to to lose a big mass of fat I Weighted 120 Kg now I'm 75 Kg <br /></p>
               <h5>Marshmello Gomez</h5>
-              <div class="tt-rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+        <div class="tt-rating">
+   
+         
+                <i class="fa fa-star fa-2x" data-index="0"></i>
+                <i class="fa fa-star fa-2x" data-index="1"></i>
+                <i class="fa fa-star fa-2x" data-index="2"></i>
+                <i class="fa fa-star fa-2x" data-index="3"></i>
+                <i class="fa fa-star fa-2x" data-index="4"></i>
+                
+                <br><br>
+			          <?php echo round($avg,2) ?>
               </div>
             </div>
           </div>

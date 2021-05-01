@@ -40,14 +40,18 @@
          <div class="search-close-switch">+</div>
          <form class="search-model-form" action="index.php" method="POST">
         
-             <input class="input" type="text" id="search-input" placeholder="Search here....." name="search">
+             <input class="input" type="text" id="search-input" placeholder="Search here....." name="search" id="search">
 
              <button class="searchButton" type="submit" name="submit-search">Search</button>
              <div class="article-container">
 
 <?php 
 
-   if(isset($_POST['submit-search'])){
+   if(isset($_POST['submit-search']))
+   {
+
+    include './includes/db.php';
+     
       $search = mysqli_real_escape_string($con, $_POST['search']);
 
       $sql = "SELECT * FROM article WHERE a_title LIKE '%" . $search ."%' OR
@@ -97,7 +101,7 @@
 </div>
          </form>
          
-         
+         <div id="success__para"></div>
       
      </div>
      <div id="result"></div>
@@ -114,7 +118,6 @@
  <script src="js/owl.carousel.min.js"></script>
  <script src="js/main.js"></script>
  <script src="custom.js"></script>
-
 
 
 
@@ -158,23 +161,23 @@
 
  <!-- Searching -->
 <script>
-    function do_serach() {
-        var search_terms = $("#search-input").val();
-        $.ajax 
-        ({
-            type: "POST",
-            url: "index.php",
-            data: {
-                search: "search",
-                search_term: search
-            },
+    function submitdata(){
+        var search = document.getElementById("search");
+
+        $.ajax({
+            type: 'post',
+            url: 'index.php',
+            data : { search : search},
+
             success: function (response) {
-                document.getElementById("result").innerHTML = response;
+                $('#success__para').html("Your Data Is Submitted");
             }
         });
+
         return false;
     }
 </script>
+<script src="rating.js"></script>
  </body>
 
  </html>
